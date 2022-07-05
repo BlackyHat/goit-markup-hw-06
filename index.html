@@ -32,7 +32,6 @@
       <ul class="contacts list">
         <li class="contacts-item">
           <a href="mailto:info@devstudio.com" class="contacts-link link">
-
             <svg class="icon-mail" width="16" height="12">
               <use href="./images/icons.svg#icon-mail"></use>
             </svg>info@devstudio.com</a>
@@ -52,7 +51,6 @@
     <section class="section hero">
       <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
       <button type="button" class="button" data-modal-open>Заказать услугу</button>
-
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button type="button" class="close-button" data-modal-close>
@@ -60,7 +58,59 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
+
+          <form role="group" class="modal-form" autocomplete="off">
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <div class="modal-form-field">
+              <label class="modal-label" for="modal-name">Имя</label>
+              <div class="field-input">
+
+                <input class="modal-form-input" type="name" id="modal-name">
+                <svg class="modal-form-icon" width="12" height="12">
+                  <use href="./images/icons.svg#modal-icon-man"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-field">
+              <label class="modal-label" for="modal-tel">Телефон</label>
+              <div class="field-input">
+
+                <input class="modal-form-input" type="tel" id="modal-tel">
+                <svg class="modal-form-icon" width="13" height="13">
+                  <use href="./images/icons.svg#modal-icon-tel"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-field">
+              <label class="modal-label" for="modal-mail">Почта</label>
+              <div class="field-input">
+                <input class="modal-form-input" type="email" id="modal-mail">
+                <svg class="modal-form-icon" height="12" width="20">
+                  <use href="./images/icons.svg#modal-icon-envelope"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="modal-form-feedback">
+              <label class="modal-label" for="modal-feedback">
+                Комментарий</label>
+              <textarea class="modal-textarea-input" id="modal-feedback" name="feedback" rows="5"
+                placeholder="Введите текст"></textarea>
+            </div>
+            <label class="modal-label-agree">Соглашаюсь с
+              рассылкой и принимаю <a class="modal-link link" href="#">Условия договора</a>
+              <input type="checkbox" class="checkbox visually-hidden" name="modal-agree" required>
+              <svg class="unchecked-icon" width="16" height="15">
+                <use href="/images/icons.svg#icon-unchecked"></use>
+              </svg>
+              <svg class="checked-icon" width="16" height="15">
+                <use href="/images/icons.svg#icon-checked"></use>
+              </svg>
+            </label>
+            <button type="submit" class="modal-button-submit">Отправить</button>
+          </form>
+
         </div>
+      </div>
       </div>
     </section>
     <!--Особливості роботи команди-->
@@ -334,8 +384,20 @@
             </li>
           </ul>
         </div>
+        <div class="footer-item">
+          <form class="footer-join">
+            <label for="footer-join-email" class="footer-join-label">Подпишитесь на рассылку</label>
+            <div class="footer-join-field">
+              <input type="email" class="footer-join-input" name="footer-join-email" placeholder="E-mail" />
+              <button class="footer-join-submit" type="submit">Подписаться
+                <svg class="footer-join-icon" width="24" height="24">
+                  <use href="./images/icons.svg#modal-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
   </footer>
 
   <script src="./js/header.js"></script>
