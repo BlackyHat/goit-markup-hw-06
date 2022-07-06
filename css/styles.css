@@ -465,8 +465,8 @@ img {
 
 .unchecked-icon {
   position: absolute;
-  transform: translateY(-50%);
 
+  transform: translateY(-50%);
   top: 50%;
   left: 0;
   opacity: 1;
@@ -479,9 +479,11 @@ img {
 .checked-icon {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   left: 0;
+  transform: translateY(-50%);
+
   opacity: 0;
+
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
   border-radius: 2px;
